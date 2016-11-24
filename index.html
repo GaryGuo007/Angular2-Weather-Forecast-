@@ -1,0 +1,75 @@
+<html>
+<head>
+    <base href="/">
+    <title>Angular 2 weather forecast</title>
+    <meta charset="UTF-8">
+
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['map']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+    //  google.charts.setOnLoadCallback(drawMap);
+
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+         //   google.charts.setOnLoadCallback(drawMap);
+
+      </script>      
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=98908127"></script>
+ 
+    <!--<link rel="stylesheet" href="http://bootswatch.com/journal/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">-->
+    <script src="http://cdn.auth0.com/js/lock/10.2/lock.min.js"></script>
+    <!-- Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+  
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <!--<script src="systemjs.config.js"></script>-->
+    <!--<script src="node_modules/zone.js/dist/zone.js"></script>-->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <!-- This is mylivechat service-->
+
+ <link rel="stylesheet" href="src/css/app.css">
+  </head>
+<body>
+
+<my-app>Loading...</my-app>
+<Iframe src="http://openweathermap.org/weathermap"  scrolling="yes" frameborder="5px"></iframe>
+
+<!--width="500px" height="500px"-->
+<!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                     <div id="chart_div"></div>
+                    <p style="margin:15px; color:#ccc">Copyright &copy; 2016</p>
+                </div>
+            </footer>
+<script>
+
+    System.config({
+        packages: {
+            app: {
+                format: 'register',
+                defaultExtension: 'js'
+            }
+        }
+    });
+    System.import('app/boot')
+            .then(null, console.error.bind(console));
+</script>
+</body>
+</html>
